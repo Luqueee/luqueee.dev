@@ -8,7 +8,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen gap-8  ">
       <FlickeringGrid
         //className="z-0 absolute inset-0 size-full w-full h-[100vh] "
-        className="z-0 absolute inset-0 size-full w-full h-[100vh] [mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
+        className="-z-10 absolute inset-0 size-full w-full h-[100vh] [mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
         squareSize={4}
         gridGap={4}
         color="#6B7280"
@@ -21,7 +21,7 @@ export default function Home() {
           alt="Adrià Cabrera Luque"
           width={200}
           height={200}
-          className=" hover:scale-110 object-cover transition-all duration-500 object-center select-none"
+          className=" hover:scale-110 z-50 object-cover transition-all duration-500 object-center select-none"
           draggable={false}
         />
       </div>
