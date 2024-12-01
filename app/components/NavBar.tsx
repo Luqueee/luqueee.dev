@@ -55,7 +55,7 @@ import { ModeToggle } from "./ModeToggle";
 
 export default function NavBar() {
   return (
-    <NavigationMenu className="absolute top-4 right-4 border px-1 py-1 rounded-full">
+    <NavigationMenu className="absolute top-4 right-8 border px-1 py-1 rounded-full">
       <NavigationMenuList>
         {/* <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>

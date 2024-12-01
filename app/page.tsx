@@ -2,9 +2,19 @@ import Link from "next/link";
 import Github from "./components/icons/Github";
 import Image from "next/image";
 import Instagram from "./components/icons/Instagram";
+import { FlickeringGrid } from "./components/FlickeringGrid";
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-8 pb-20 gap-8 sm:p-20 ">
+    <div className="flex flex-col items-center justify-center min-h-screen gap-8  ">
+      <FlickeringGrid
+        //className="z-0 absolute inset-0 size-full w-full h-[100vh] "
+        className="z-0 absolute inset-0 size-full w-full h-[100vh] [mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
+        squareSize={4}
+        gridGap={4}
+        color="#6B7280"
+        maxOpacity={0.2}
+        flickerChance={0.3}
+      />
       <div className="overflow-hidden rounded-full">
         <Image
           src="/yo.jpg"

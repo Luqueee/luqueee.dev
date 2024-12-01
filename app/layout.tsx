@@ -26,7 +26,9 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`${roboto.className} antialiased relative text-primary`}>
+      <body
+        className={`${roboto.className} w-screen h-screen antialiased relative text-primary m-0 p-0 overflow-x-hidden`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
