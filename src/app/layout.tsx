@@ -5,7 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "../components/theme-provider";
 
 import "./globals.css";
-import NavBar from "../components/NavBar";
+// import NavBar from "../components/NavBar";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -27,7 +27,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body
-        className={`${roboto.className} w-screen min-h-[200vh] antialiased relative px-4 text-primary m-0 p-0 overflow-x-hidden`}
+        className={`${roboto.className} w-screen min-h-screen antialiased relative px-4 text-primary m-0 p-0 overflow-x-hidden`}
       >
         <ThemeProvider
           attribute="class"
@@ -38,7 +38,7 @@ export default function RootLayout({
           {children}
           <Analytics />
           <SpeedInsights />
-          <NavBar />
+          {/* <NavBar /> */}
         </ThemeProvider>
       </body>
     </html>
